@@ -5,7 +5,7 @@ echo "ENter  username"
 read user_name
 echo "Enter password"
 read -s password # -s is use to hide anything we enter
-presentdate= `date +'%s`
+presentdate=`date +'%s'`
 list_of_branches=$(curl -s -u $user_name:$password https://api.github.com/repos/$user_name/$repo_name/branches | jq '.[].name')
 for branch in $list_of_branches; do 
 api_branch_name=$(echo $branch | cut -d'"' -f 2)
