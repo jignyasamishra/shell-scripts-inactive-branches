@@ -1,2 +1,2 @@
 # shell-scripts-inactive-branches
-Identifying inactive branches in github repo
+Identifying inactive branches in github repositories
